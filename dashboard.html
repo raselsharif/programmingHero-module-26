@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h1 class="text-6xl text-center mt-6">Dashboard</h1>
+    <section class="grid grid-cols-3 gap-3 w-3/4 mx-auto mt-5">
+        <div class="bg-cyan-300 py-8 px-4 rounded-3xl">
+            <h2 class="text-3xl">Deposit</h2>
+            <h3 class="text-3xl">$ <span id="deposit-amount">00</span></h3>
+        </div>
+        <div class="bg-yellow-200 py-8 px-4 rounded-3xl">
+            <h2 class="text-3xl">withdraw</h2>
+            <h3 class="text-3xl">$ <span>00</span></h3>
+        </div>
+        <div class="bg-green-500 py-8 px-4 rounded-3xl">
+            <h2 class="text-3xl">Balance</h2>
+            <h3 class="text-3xl">$ <span id="balance">00</span></h3>
+        </div>
+    </section>
+    <section class="grid grid-cols-2 gap-3 w-3/4 mx-auto mt-5">
+        <div class="bg-neutral-400 py-8 px-4 rounded-3xl">
+            <h2 class="text-3xl">Please Deposit</h2>
+            <input id="deposit-field" class="block px-3 py-2 w-11/12 mt-3" type="text" placeholder="$ Amount you want to deposit">
+            <button id="deposit-btn" class="bg-fuchsia-500 text-white rounded-xl py-2 px-4 mt-4">Deposit</button>
+        </div>
+        <div class="bg-red-300 py-8 px-4 rounded-3xl">
+            <h2 class="text-3xl">Please Withdraw</h2>
+            <input id="" class="block px-3 py-2 w-11/12 mt-3" type="text" placeholder="$ Amount you want to withdraw">
+            <button id="" class="bg-fuchsia-500 text-white rounded-xl py-2 px-4 mt-4">Withdraw</button>
+        </div>
+    </section>
+
+    <script src="js/deposit-btn.js"></script>
+</body>
+
+</html>
