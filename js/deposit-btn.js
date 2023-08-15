@@ -5,7 +5,7 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     const depositFieldValue = depositField.value;
 
     depositField.value = '';
-    if (isNaN(depositFieldValue)) {
+    if (isNaN(depositFieldValue) || depositFieldValue === '') {
         alert("Input only numbers.")
         return;
     }
@@ -21,10 +21,7 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
 
     const balance = document.getElementById('balance');
     const balanceStr = balance.innerText;
-    const newTotalBalance = parseFloat(balanceStr);
-    balance.innerText = total;
-    console.log(balance);
-
-
-
+    const newBalance = parseFloat(balanceStr);
+    const newTotalBalance = newBalance + previousDepositTotal;
+    balance.innerText = newTotalBalance;
 })

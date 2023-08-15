@@ -17,11 +17,11 @@
         </div>
         <div class="bg-yellow-200 py-8 px-4 rounded-3xl">
             <h2 class="text-3xl">withdraw</h2>
-            <h3 class="text-3xl">$ <span>00</span></h3>
+            <h3 class="text-3xl">$ <span id="withdraw-output">00</span></h3>
         </div>
         <div class="bg-green-500 py-8 px-4 rounded-3xl">
             <h2 class="text-3xl">Balance</h2>
-            <h3 class="text-3xl">$ <span id="balance">00</span></h3>
+            <h3 class="text-3xl">$ <span id="balance">10</span></h3>
         </div>
     </section>
     <section class="grid grid-cols-2 gap-3 w-3/4 mx-auto mt-5">
@@ -32,12 +32,13 @@
         </div>
         <div class="bg-red-300 py-8 px-4 rounded-3xl">
             <h2 class="text-3xl">Please Withdraw</h2>
-            <input id="" class="block px-3 py-2 w-11/12 mt-3" type="text" placeholder="$ Amount you want to withdraw">
-            <button id="" class="bg-fuchsia-500 text-white rounded-xl py-2 px-4 mt-4">Withdraw</button>
+            <input id="withdraw-field" class="block px-3 py-2 w-11/12 mt-3" type="text" placeholder="$ Amount you want to withdraw">
+            <button id="withdraw-btn" class="bg-fuchsia-500 text-white rounded-xl py-2 px-4 mt-4">Withdraw</button>
         </div>
     </section>
 
     <script src="js/deposit-btn.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 
 </html>
