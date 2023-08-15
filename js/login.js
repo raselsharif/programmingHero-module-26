@@ -9,7 +9,7 @@ document.getElementById('login-btn').addEventListener("click", function () {
 
     // validation
     if ((emailValue == "rasel" || emailValue == 'rasel@mail.com') && passwordValue == 123) {
-        console.log('valid user');
+        window.location.href="dashboard.html"
     } else {
         alert("You Typed wrong user name/password")
     }
